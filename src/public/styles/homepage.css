@@ -1,0 +1,283 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: white;
+    color: black;
+    font-family :Poppins, sans-serif;
+}
+#main
+{
+    min-height: 100vh;
+    width: 100%;
+}
+/* Default styles */
+#nav {
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .logo img {
+    height: 9vh;
+    width: 100px; /* Adjust as needed */
+    margin: 2px;
+    padding-left: 15px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 3px;
+    padding: 3px;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .nav-links a:hover {
+    color: rgb(242, 159, 5);
+  }
+  
+  .cart-buttons {
+    display: flex;
+  }
+  
+    .btn {
+    margin: 5px;
+    border: 2px solid rgb(242, 159, 5);
+    height: 7vh;
+    width: 80px;
+    border-radius: 15px;
+    background-color: rgb(242, 159, 5);
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+ .btn:hover {
+    border: 1px solid rgb(242, 159, 5);
+    color: rgb(242, 159, 5);
+    background-color: aliceblue;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media only screen and (max-width: 768px) {
+    #nav {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .nav-links {
+      margin-top: 10px;
+    }
+  
+    .nav-links li {
+      margin: 5px;
+    }
+  
+    .cart-buttons {
+      margin-top: 10px;
+    }
+  }
+  
+  #container {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10%;
+    margin-top: 20px; /* Added margin for spacing */
+  }
+  
+  #cont-ele {
+    flex: 1 1 40%; /* Adjusted flex basis for larger screens */
+    margin: 30px;
+    height: 80vh;
+    /* border: 1px solid black; */
+    position: relative;
+    top: 10vh;
+  }
+  .text{
+    position: relative;
+    top: 5vh;
+  }
+  .text h1 {
+    font-size: 4.3rem;
+    font-weight: 600;
+    margin: 5px;
+    margin-top: 2vh;
+    margin-right: 2vw;
+    line-height: 13vh;
+   
+  }
+  
+  .text p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 5px;
+    margin-top: 2vh;
+    margin-right: 2vw;
+    line-height: 4vh;
+    color: rgb(98, 97, 97);
+    
+  }
+  
+  .image img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    #container {
+      flex-direction: column; /* Change flex direction to column on smaller screens */
+    }
+  
+    #cont-ele {
+      flex: 1 1 90%; /* Make flex items take full width on smaller screens */
+      margin: 10px;
+    }
+  
+    .text h1,
+    .text p {
+      font-size: 3rem; /* Adjusted font size for smaller screens */
+      margin-right: 0; /* Removed right margin for better spacing */
+      text-align: center; /* Center-align text on smaller screens */
+      line-height: normal;
+    }
+    .text p
+    {
+        font-size: 1.5rem;
+    }
+    .text button
+    {
+        transform: translate(70%);
+    }
+  }
+  
+
+  #how-works {
+    text-align: center;
+    margin-top: 10vh;
+  }
+  
+  .center-heading {
+    font-size: 4.3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .work-flow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .flow-container {
+    flex: 1 1 200px; /* Proportionate to the provided example */
+    margin: 10px;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .flow-container img {
+    width: 250px; /* Adjust image size as needed */
+    height: 150px; /* Adjust image size as needed */
+    display: block;
+    
+    margin: 0 auto;
+  }
+  
+  .flow-container h3 {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .flow-container h3 span {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(98, 97, 97);
+    margin-right: 5px;
+  }
+  .flow-container p
+  {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    /* font-weight: 600; */
+    color: rgb(98, 97, 97);
+  }
+  #testimonial {
+    margin: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  #testimonial h3 {
+    font-size: 2.3rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  #comp {
+    flex: 1 1 200px;
+    height: auto; /* Adjust height to auto for responsiveness */
+    width: 90%; /* Adjust width for responsiveness */
+    max-width: 300px; /* Set a maximum width */
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px rgb(218, 217, 217);
+    text-align: center; /* Center text */
+    padding: 20px; /* Add padding for better spacing */
+  }
+  
+  #comp span {
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(214, 144, 14);
+  }
+  
+  #comp p {
+    font-size: 1rem;
+    font-weight: 300; /* Correct the font weight property */
+    color: rgb(98, 97, 97);
+  }
+  
+  @media (max-width: 768px) 
+  {
+    #testimonial {
+      flex-direction: column; /* Change flex direction to column on smaller screens */
+    }
+    #comp
+    {
+        height: auto;
+    }
+}
