@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- Include CSS stylesheets and other dependencies here -->
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#chefs">Chefs</a></li>
+            <li><a href="#orders">Orders</a></li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </nav>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard">
+        <h2>Dashboard</h2>
+        <!-- Display key metrics here -->
+    </section>
+
+    <!-- Chefs Management Section -->
+    <section id="chefs">
+        <h2>Chefs Management</h2>
+        <!-- Form to add new chef -->
+        <form id="addChefForm">
+            <label for="chefName">Chef's Name:</label>
+            <input type="text" id="chefName" name="chefName" required>
+            <label for="chefDescription">Description:</label>
+            <textarea id="chefDescription" name="chefDescription" required></textarea>
+            <label for="chefImage">Upload Image:</label>
+            <input type="file" id="chefImage" name="chefImage" accept="image/*" required>
+            <button type="submit">Add Chef</button>
+        </form>
+        <!-- Table to display existing chefs -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Image</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="chefsTableBody">
+                <!-- Chefs will be dynamically added here -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Orders Management Section -->
+    <section id="orders">
+        <h2>Orders Management</h2>
+        <!-- Table to display list of orders -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer Name</th>
+                    <th>Status</th>
+                    <th>Total Amount</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="ordersTableBody">
+                <!-- Orders will be dynamically added here -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Include JavaScript scripts here -->
+</body>
+
+</html>

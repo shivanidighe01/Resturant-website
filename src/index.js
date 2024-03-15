@@ -19,11 +19,22 @@ const __dirname = dirname(__filename);
 
 app.use(Express.static(path.join(__dirname, 'public')));
 
+app.use(Express.urlencoded({ extended: true }));
+app.use(Express.json());
+
 
 //route import
 import homeRoute from './routes/home.route.js';
-// const homeRoute=require('./routes/home,route.js');
+import aboutRoute from './routes/about.route.js';
+// const authRoutes = require('./routes/authRoutes');
+import authRoutes from './routes/userlogin.route.js';
+
 app.use('/',homeRoute);
+app.use('/',aboutRoute);
+// app.use('/signup',authRoutes);
+// app.use('/login',authRoutes);
+app.use('/',authRoutes);
+
 
 
 
