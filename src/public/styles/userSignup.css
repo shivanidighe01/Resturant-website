@@ -1,0 +1,61 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: white;
+    color: black;
+    font-family :Poppins, sans-serif;
+}
+form
+{
+    width: 30vw;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* background-color: rgb(245, 244, 241); */
+    box-shadow: 3px 3px 15px rgb(218, 217, 217);
+}
+form h2
+{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: rgb(242, 159, 5);
+}
+.form-group label
+{
+    font-size: 18px;
+    font-weight: 400;
+}
+form .btn
+{
+    background-color: rgb(242, 159, 5);
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 10px;
+    height: 6vh;
+    border: 1px solid rgb(242, 159, 5);
+}
+form .btn:hover
+{
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid black;
+}
+form p
+{
+    font-size: 14px;
+}
